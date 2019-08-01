@@ -122,15 +122,16 @@ def game_hash
 ###########
 
 
-def num_points_scored(player_pts)
-  [:away][]
+def num_points_scored(player)
+  count = 0
   game_hash.each do |loc, team|
-    team.each do |feature, info|
-      
-      if feature == 
-        info.each do |players|
-          if players[:player_name] == player
-            player[:points]
+    team.each do |category, stat|
+      stat.each do |player_hash|
+        player_hash.each do |key, value|
+          if :player_name = player
+            :points
+          end
+            count += 1
           end
         end
       end
