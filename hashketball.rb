@@ -123,6 +123,7 @@ def game_hash
 #######
 
 def player_numbers(teamname)
+  jerseys = []
   game_hash.each do |loc, team|
     if team[:teamname] == teamname
       team[:players].fetch
