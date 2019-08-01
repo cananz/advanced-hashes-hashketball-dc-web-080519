@@ -130,6 +130,7 @@ game_hash.each do |loc, team|
       if category == :players
         stat.each do |player_stat|
             jerseys << player_stat[:number]
+          end
         end
       end
     end
