@@ -126,7 +126,9 @@ def num_points_scored(player)
   game_hash.each do |loc, team|
     team.each do |category, stat|
       if category == :players
-        player_hash.each do |key, value|
+        stat.each do |player_stat|
+          
+          |key, value|
           if :player_name == player
             :points
           end
