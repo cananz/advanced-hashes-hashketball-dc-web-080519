@@ -120,19 +120,11 @@ def game_hash
 
 
 ###########
-
-
-def num_points_scored(player)
+def team_colors(teamname)
   game_hash.each do |loc, team|
-    team.each do |category, stat|
-      if category == :players
-        stat.each do |player_stat|
-          if player_stat[:player_name] == player
-            return player_stat[:points]
-          end
-        end
+      if team[:team_name] == teamname
+        return team[:colors]
       end
-    end
   end
 end
 #######
@@ -152,12 +144,22 @@ def shoe_size(player)
 end
 #######
 
-def team_colors(teamname)
+def num_points_scored(player)
   game_hash.each do |loc, team|
-      if team[:team_name] == teamname
-        return team[:colors]
+    team.each do |category, stat|
+      if category == :players
+        stat.each do |player_stat|
+          if player_stat[:player_name] == player
+            return player_stat[:points]
+          end
+        end
       end
+    end
   end
 end
 #######
+
+
+
+
 
