@@ -120,6 +120,16 @@ def game_hash
 
 
 ###########
+
+#######
+
+def team_names
+  game_hash.each do |loc, team|
+    return team[:team_name]
+  end
+end
+#######
+
 def team_colors(teamname)
   game_hash.each do |loc, team|
       if team[:team_name] == teamname
@@ -157,7 +167,7 @@ def num_points_scored(player)
     end
   end
 end
-#######
+
 
 
 
