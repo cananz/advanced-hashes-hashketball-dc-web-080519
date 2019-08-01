@@ -123,7 +123,8 @@ def game_hash
 #######
 
 def player_numbers(teamname)
-  game_hash.reduce do ||
+  game_hash.reduce do |loc, team|
+    
 end
 #######
 
