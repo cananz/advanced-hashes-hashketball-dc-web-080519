@@ -120,7 +120,11 @@ def game_hash
 
 
 ###########
+#######
 
+def player_numbers(teamname)
+  game_hash.reduce do ||
+end
 #######
 
 def team_names
