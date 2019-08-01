@@ -123,7 +123,6 @@ def game_hash
 
 
 def num_points_scored(player)
-  count = 0
   game_hash.each do |loc, team|
     team.each do |category, stat|
       stat.each do |player_hash|
