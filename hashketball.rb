@@ -128,7 +128,11 @@ def player_numbers(teamname)
     if team[:teamname] == teamname
       team.each do |category, stat|
         if category = :players
-          stat.fetch_values
+          stat.fetch_values(:number)
+        end
+      end
+    end
+  end
     
 end
 #######
