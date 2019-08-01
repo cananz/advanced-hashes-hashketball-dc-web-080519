@@ -128,7 +128,7 @@ def num_points_scored(player)
       if category == :players
         stat.each do |player_stat|
           if :player_name == player
-            :points
+            return player_stat[:points]
           end
             count += 1
           end
