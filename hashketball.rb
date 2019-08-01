@@ -123,17 +123,17 @@ def game_hash
 #######
 
 def player_numbers(teamname)
-  jerseys = []
-  game_hash.each do |loc, team|
-      team.each do |category, stat| if team[:teamname] == teamname
-          stat.each do |player_stat| if category == :players
+jerseys = []
+game_hash.each do |loc, team|
+    team.each do |category, stat|
+      if category == :players
+        stat.each do |player_stat|
             jerseys << player_stat[:number]
-          end
         end
       end
     end
   end
-  return jerseys
+jerseys
 end
 #######
 
