@@ -123,7 +123,9 @@ def game_hash
 #######
 
 def player_numbers(teamname)
-  game_hash.fetch do |loc, team|
+  game_hash.each do |loc, team|
+    if team[:teamname] == teamname
+      team[:players].fetch
     
 end
 #######
