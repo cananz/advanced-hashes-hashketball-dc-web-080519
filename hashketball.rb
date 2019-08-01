@@ -126,7 +126,7 @@ def player_numbers(teamname)
   game_hash.each do |loc, team|
     if team[:teamname] == teamname
       team.each do |category, stat|
-        if category = :players
+        if category == :players
           stat.fetch_values(:number)
         end
       end
