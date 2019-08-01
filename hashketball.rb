@@ -125,6 +125,7 @@ def game_hash
 def player_numbers(teamname)
 jerseys = []
 game_hash.each do |loc, team|
+    if team[:team_name] == teamname
     team.each do |category, stat|
       if category == :players
         stat.each do |player_stat|
