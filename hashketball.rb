@@ -123,7 +123,7 @@ def game_hash
 
 
 def num_points_scored(player_pts)
-  
+  [:game_hash][:away][]
   :game_hash.each do |loc, team|
     team.each do |feature, info|
       
