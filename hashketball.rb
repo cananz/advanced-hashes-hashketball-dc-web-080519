@@ -128,7 +128,6 @@ def player_numbers(teamname)
     if team[:teamname] == teamname
       team.each do |category, stat|
         stat.each do |player_stat| if category == :players
-          
           jerseys << player_stat[:number]
           end
         end
