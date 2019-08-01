@@ -124,7 +124,7 @@ def game_hash
 #######
 
 def team_names
-  game_hash.collect do |loc, team|
+  game_hash.map do |loc, team|
     team[:team_name]
   end
 end
