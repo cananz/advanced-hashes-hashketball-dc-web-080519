@@ -122,12 +122,15 @@ def game_hash
 ###########
 
 def big_shoe_rebounds
+clown_feet = 0
+clown_hoops = 0
   game_hash.each do |loc, team|
     team.each do |category, stat|
       if category == :players
         stat.each do |player_stat|
           if player_stat[:shoe] > clown_feet
             clown_feet = player_stat[:shoe]
+            clown_hoops = player_stat
 end
 #######
 
