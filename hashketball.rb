@@ -243,10 +243,27 @@ end
 #######
 
 def winning_team
-  
+home = 0
+away = 0
+  game_hash.each do |loc, team|
+    if loc == :home
+    team.each do |category, stat|
+      if category == :players
+        stat.each do |player_stat|
+          home player_stat[:points] > swish
+            swish = player_stat[:points]
+            baller = player_stat[:player_name]
+          end
+        end
+      end
+    end
+  end
+baller
 end
 
 #######
 
-def 
+def player_with_longest_name
+  
+end
 
