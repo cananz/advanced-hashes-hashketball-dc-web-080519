@@ -130,7 +130,7 @@ def player_stats(player)
           if player_stat[:player_name] == player
             no_name player_stat
           end
-          no_name.delete_if |key, value| 
+          no_name.delete_if {|key, value| key }
         end
       end
     end
