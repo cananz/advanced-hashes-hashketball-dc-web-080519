@@ -120,6 +120,20 @@ def game_hash
 
 
 ###########
+
+def player_stats(player)
+  game_hash.each do |loc, team|
+    team.each do |category, stat|
+      if category == :players
+        stat.each do |player_stat|
+          if player_stat[:player_name] == player
+            return player_stat
+          end
+        end
+      end
+    end
+  end
+end
 #######
 
 def player_numbers(teamname)
