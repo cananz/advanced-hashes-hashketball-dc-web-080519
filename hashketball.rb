@@ -262,12 +262,14 @@ away_skills = 0
       end
     end
   end
-if home_skills <= away_skills
+  if home_skills <= away_skills
   game_hash[:away][:team_name]
-if away_skills <= home_skills
+  end
+  if away_skills <= home_skills
   game_hash[:home][:team_name]
+  end
 end
-end
+
 
 
 #######
