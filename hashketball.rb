@@ -122,12 +122,13 @@ def game_hash
 ###########
 
 def player_stats(player)
+  no_name = {}
   game_hash.each do |loc, team|
     team.each do |category, stat|
       if category == :players
         stat.each do |player_stat|
           if player_stat[:player_name] == player
-            player_stat.Hash
+            no_name << player_stat
           end
         end
       end
