@@ -127,7 +127,7 @@ def big_shoe_rebounds
       if category == :players
         stat.each do |player_stat|
           if player_stat[:shoe] > clown_feet
-            return player_stat[:shoe]
+            clown_feet = player_stat[:shoe]
 end
 #######
 
