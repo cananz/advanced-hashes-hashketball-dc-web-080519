@@ -136,6 +136,7 @@ no_name = {}
     end
   end
 #no_name.delete_if {|key, value| key = :player_name}
+no_name
 end
 #######
 
