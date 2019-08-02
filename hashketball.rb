@@ -243,26 +243,26 @@ end
 #######
 
 def winning_team
-home_skills = 0
-away_skills = 0
-  game_hash.each do |loc, team|
-    if loc == :home
-    team.each do |category, stat|
-      if category == :players
-        stat.each do |player_stat|
-          home_skills.add(player_stat[:points])
+  home_skills = 0
+  away_skills = 0
+    game_hash.each do |loc, team|
+      if loc == :home
+      team.each do |category, stat|
+        if category == :players
+          stat.each do |player_stat|
+           home_skills.add(player_stat[:points])
+          end
         end
       end
-    if loc == :away
-      team.each do |category, stat|
-      if category == :players
-        stat.each do |player_stat|
-          away_skills.add(player_stat[:points])
+      if loc == :away
+        team.each do |category, stat|
+        if category == :players
+          stat.each do |player_stat|
+           away_skills.add(player_stat[:points])
+          end
         end
       end
     end
-  end
-  
   if home_skills <= away_skills
   game_hash[:away][:team_name]
   end
