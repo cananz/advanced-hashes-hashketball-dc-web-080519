@@ -224,7 +224,7 @@ end
 
 def most_points_scored
 swish = 0
-baller = mvp
+baller = "mvp"
   game_hash.each do |loc, team|
     team.each do |category, stat|
       if category == :players
