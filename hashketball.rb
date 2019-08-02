@@ -250,14 +250,14 @@ def winning_team
       team.each do |category, stat|
         if category == :players
           stat.each do |player_stat|
-           home_skills.add(player_stat[:points])
+           home_skills = home_skills + player_stat[:points]
          end
         end
       if loc == :away
         team.each do |category, stat|
         if category == :players
           stat.each do |player_stat|
-           away_skills.add(player_stat[:points])
+           away_skills = away_skills + player_stat[:points]
           end
         end
       end
