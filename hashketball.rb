@@ -131,6 +131,12 @@ clown_hoops = 0
           if player_stat[:shoe] > clown_feet
             clown_feet = player_stat[:shoe]
             clown_hoops = player_stat
+          end
+        end
+      end
+    end
+  end
+clown_hoops
 end
 #######
 
