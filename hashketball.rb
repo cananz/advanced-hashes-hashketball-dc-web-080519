@@ -130,7 +130,7 @@ clown_hoops = 0
         stat.each do |player_stat|
           if player_stat[:shoe] > clown_feet
             clown_feet = player_stat[:shoe]
-            clown_hoops = player_stat
+            clown_hoops = player_stat[:rebounds]
           end
         end
       end
