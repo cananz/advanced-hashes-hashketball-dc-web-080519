@@ -268,7 +268,7 @@ if away_skills <= home_skills
   game_hash[:home][:team_name]
 end
 end
-end
+
 
 #######
 
