@@ -122,6 +122,7 @@ def game_hash
 ###########
 
 def player_stats(player)
+no_name = {} 
   game_hash.each do |loc, team|
     team.each do |category, stat|
       if category == :players
