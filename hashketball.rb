@@ -251,9 +251,8 @@ def winning_team
         if category == :players
           stat.each do |player_stat|
            home_skills.add(player_stat[:points])
-          end
+         end
         end
-      end
       if loc == :away
         team.each do |category, stat|
         if category == :players
@@ -262,7 +261,6 @@ def winning_team
           end
         end
       end
-    end
   if home_skills <= away_skills
   game_hash[:away][:team_name]
   end
