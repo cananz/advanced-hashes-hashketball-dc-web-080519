@@ -122,19 +122,20 @@ def game_hash
 ###########
 
 def player_stats(player)
-no_name = {} 
+#no_name = {} 
   game_hash.each do |loc, team|
     team.each do |category, stat|
       if category == :players
         stat.each do |player_stat|
           if player_stat[:player_name] == player
-              no_name = Hash.new(player_stat)
+            player_stat.
+#              no_name = Hash.new(player_stat)
           end
         end
       end
     end
   end
-no_name.delete_if {|key, value| key = :player_name}
+#no_name.delete_if {|key, value| key = :player_name}
 end
 #######
 
