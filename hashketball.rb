@@ -128,7 +128,8 @@ def player_stats(player)
       if category == :players
         stat.each do |player_stat|
           if player_stat[:player_name] == player
-            no_name << player_stat
+            no_name player_stat
+            
           end
         end
       end
