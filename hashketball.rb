@@ -279,20 +279,19 @@ end
 
 def player_with_longest_name
 name_length = 0
-nickname_needed = 
-baller = "mvp"
+nickname_needed = "qwerty"
   game_hash.each do |loc, team|
     team.each do |category, stat|
       if category == :players
         stat.each do |player_stat|
-          if player_stat[:points] > swish
-            swish = player_stat[:points]
-            baller = player_stat[:player_name]
+          if player_stat[:player_name].length > name_length
+            name_length = player_stat[:player_name].length
+            nickname_needed = player_stat[:player_name]
           end
         end
       end
     end
   end
-baller
+nickname_needed
 end
 
