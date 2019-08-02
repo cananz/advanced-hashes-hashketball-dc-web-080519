@@ -129,14 +129,13 @@ no_name = {}
         stat.each do |player_stat|
           if player_stat[:player_name] == player
 #            player_stat.reject {|key, value| key == :player_name}
-              no_name = player_stat.select 
-              #{|k,v| k != :player_name}
+              no_name = player_stat.select {|k,v| k != :player_name}
           end
         end
       end
     end
   end
-no_name.delete_if {|key, value| key = :player_name}
+#no_name.delete_if {|key, value| key = :player_name}
 end
 #######
 
