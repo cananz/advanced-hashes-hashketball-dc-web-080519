@@ -134,6 +134,7 @@ def player_stats(player)
       end
     end
   end
+no_name
 end
 #######
 
