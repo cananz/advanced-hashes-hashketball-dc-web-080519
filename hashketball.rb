@@ -127,7 +127,7 @@ def player_stats(player)
       if category == :players
         stat.each do |player_stat|
           if player_stat[:player_name] == player
-            return player_stat
+            player_stat.Hash
           end
         end
       end
