@@ -297,4 +297,20 @@ end
 
 ########## SUPER BONUS ##########
 
-def 
+def long_name_steals_a_ton?
+swipes = 0
+swiper = "burglar"
+  game_hash.each do |loc, team|
+    team.each do |category, stat|
+      if category == :players
+        stat.each do |player_stat|
+          if player_stat[:steals] > swipes
+            swipes = player_stat[:steals]
+            swiper = player_stat[:player_name]
+          end
+        end
+      end
+    end
+  end
+swiper 
+end
