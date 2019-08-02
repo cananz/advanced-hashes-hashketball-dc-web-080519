@@ -220,7 +220,25 @@ def num_points_scored(player)
   end
 end
 
+##########BONUS##########
 
+def most_points_scored
+swish = 0
+baller = mvp
+  game_hash.each do |loc, team|
+    team.each do |category, stat|
+      if category == :players
+        stat.each do |player_stat|
+          if player_stat[:points] > swish
+            swish = player_stat[:points]
+            baller = player_stat[:player_name]
+          end
+        end
+      end
+    end
+  end
+baller
+end
 
 
 
