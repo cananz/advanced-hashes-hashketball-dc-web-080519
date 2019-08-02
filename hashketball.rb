@@ -128,7 +128,7 @@ def player_stats(player)
       if category == :players
         stat.each do |player_stat|
           if player_stat[:player_name] == player
-            player_stat.
+            player_stat.reject {|key, value|
 #              no_name = Hash.new(player_stat)
           end
         end
