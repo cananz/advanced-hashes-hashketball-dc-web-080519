@@ -312,5 +312,5 @@ swiper = "burglar"
       end
     end
   end
-swiper 
+swiper == player_with_longest_name
 end
