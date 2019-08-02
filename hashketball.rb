@@ -295,3 +295,6 @@ nickname_needed = "qwerty"
 nickname_needed
 end
 
+########## SUPER BONUS ##########
+
+def 
