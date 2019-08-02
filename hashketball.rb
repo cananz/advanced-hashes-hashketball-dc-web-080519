@@ -121,6 +121,11 @@ def game_hash
 
 ###########
 
+def big_shoe_rebounds
+  
+end
+#######
+
 def player_stats(player)
 no_name = {} 
   game_hash.each do |loc, team|
@@ -135,7 +140,6 @@ no_name = {}
       end
     end
   end
-#no_name.delete_if {|key, value| key = :player_name}
 no_name
 end
 #######
