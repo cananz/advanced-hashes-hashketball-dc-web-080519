@@ -129,8 +129,8 @@ def player_stats(player)
         stat.each do |player_stat|
           if player_stat[:player_name] == player
             no_name player_stat
-            
           end
+          no_name.delete
         end
       end
     end
